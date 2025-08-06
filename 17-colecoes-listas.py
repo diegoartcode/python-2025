@@ -23,7 +23,7 @@ pessoas[3] = 'Pedro'
 
 print(pessoas)
 
-pessoas.extend(['João', 'Maria', 'Romeu', 'Julieta']) # função .extend inclui outra lista na lista atual 
+pessoas.extend(['João', 'Maria', 'Romeu', 'Julieta','João']) # função .extend inclui outra lista na lista atual 
 
 print(pessoas)
 
@@ -45,3 +45,39 @@ print(pessoas)
 
 pessoas.remove('Romeu') # exclui pelo registro passado
 print(pessoas)
+
+# pessoas.clear() # limpa toda a lista 
+# print(pessoas)
+
+print(pessoas.index('João')) # retorna em qual indice o registro está (sendo o primeiro registro encontrado)
+
+print(pessoas.count('Maria')) # conta quantos registros tem passado pelo argumento
+print(pessoas.count('João'))
+
+pessoas.sort() # função .sort() ordena a lista em ordem ascendente 
+print(pessoas)
+
+numeros = [33,25,60,10,20]
+
+numeros.sort()
+print(numeros)
+
+numeros.reverse()
+print(numeros)
+
+maior_numero = max(numeros)
+menor_numero = min(numeros)
+
+print(maior_numero)
+print(menor_numero)
+
+turma = [
+    ['João', 20, 'Desenvolvedor web'],
+    ['Maria', 19, 'Desenvolvedora Python'],
+    ['Romeu', 32, 'Desenvolvedor PHP'],
+    ['Julieta', 31, 'Desenvolvedora Flutter']
+]
+
+print(turma[2][0]) # linha | coluna
+print(f'Idade {turma[3][1]} de {turma[3][0]}') # linha | coluna
+
