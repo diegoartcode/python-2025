@@ -65,9 +65,44 @@
 # print(soma)
 
 
-lista_nomes = ['Diego','Jhenny', 'Romeu','Julieta','João', 'Maria']
-c = 0
-for nome in lista_nomes:
-    print(nome)
-    c += 1 #c = c + 1
-    print(c, nome)
+lista_nomes = ['Diego','Jhenny', 'Romeu','Julieta','João', 'Maria','teste']
+# c = 0
+# for nome in lista_nomes:
+#     print(nome)
+#     c += 1 #c = c + 1
+#     print(c, nome)
+
+# print(len(lista_nomes))
+# print(lista_nomes[0])
+
+# for i in range(len(lista_nomes)):
+#     print(i)
+#     print(lista_nomes[i])
+
+# lista_pessoas = []
+# print(lista_pessoas)
+# for i in range(0,2 + 1):
+#     nome = input('Digite um nome: ') 
+#     lista_pessoas.append(nome)
+# print(lista_pessoas)
+
+lista_produtos = {
+    'Computador' : 4500.00,
+    'Impressora' : 350.00,
+    'Teclado' : 100.50
+}
+# print(lista_produtos['Teclado'])
+# for produto, valor in lista_produtos.items():
+#     print(produto)
+#     print(valor)
+
+# for produto in lista_produtos:
+#     print(produto)
+#     print(lista_produtos[produto])
+#     print(f'Produto {produto} custa R${lista_produtos[produto]:.2f}')
+
+for produto in lista_produtos.keys():
+    print(produto)
+
+for produto in lista_produtos.values():
+    print(produto)
